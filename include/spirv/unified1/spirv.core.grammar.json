@@ -4601,7 +4601,7 @@
       "version" : "None"
     },
     {
-      "opname" : "OpReportIntersectionNV",
+      "opname" : "OpReportIntersectionKHR",
       "class"  : "Reserved",
       "opcode" : 5334,
       "operands" : [
@@ -4615,7 +4615,7 @@
       "version" : "None"
     },
     {
-      "opname" : "OpReportIntersectionKHR",
+      "opname" : "OpReportIntersectionNV",
       "class"  : "Reserved",
       "opcode" : 5334,
       "operands" : [
@@ -4667,7 +4667,7 @@
       "version" : "None"
     },
     {
-      "opname" : "OpTypeAccelerationStructureNV",
+      "opname" : "OpTypeAccelerationStructureKHR",
       "class"  : "Reserved",
       "opcode" : 5341,
       "operands" : [
@@ -4678,7 +4678,7 @@
       "version" : "None"
     },
     {
-      "opname" : "OpTypeAccelerationStructureKHR",
+      "opname" : "OpTypeAccelerationStructureNV",
       "class"  : "Reserved",
       "opcode" : 5341,
       "operands" : [
@@ -8474,13 +8474,6 @@
           "version" : "1.3"
         },
         {
-          "enumerant" : "CallableDataNV",
-          "value" : 5328,
-          "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
-          "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
-          "version" : "None"
-        },
-        {
           "enumerant" : "CallableDataKHR",
           "value" : 5328,
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
@@ -8488,8 +8481,8 @@
           "version" : "None"
         },
         {
-          "enumerant" : "IncomingCallableDataNV",
-          "value" : 5329,
+          "enumerant" : "CallableDataNV",
+          "value" : 5328,
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "version" : "None"
@@ -8502,8 +8495,8 @@
           "version" : "None"
         },
         {
-          "enumerant" : "RayPayloadNV",
-          "value" : 5338,
+          "enumerant" : "IncomingCallableDataNV",
+          "value" : 5329,
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "version" : "None"
@@ -8516,8 +8509,8 @@
           "version" : "None"
         },
         {
-          "enumerant" : "HitAttributeNV",
-          "value" : 5339,
+          "enumerant" : "RayPayloadNV",
+          "value" : 5338,
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "version" : "None"
@@ -8530,8 +8523,8 @@
           "version" : "None"
         },
         {
-          "enumerant" : "IncomingRayPayloadNV",
-          "value" : 5342,
+          "enumerant" : "HitAttributeNV",
+          "value" : 5339,
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "version" : "None"
@@ -8544,14 +8537,21 @@
           "version" : "None"
         },
         {
-          "enumerant" : "ShaderRecordBufferNV",
-          "value" : 5343,
+          "enumerant" : "IncomingRayPayloadNV",
+          "value" : 5342,
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "version" : "None"
         },
         {
           "enumerant" : "ShaderRecordBufferKHR",
+          "value" : 5343,
+          "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
+          "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
+          "version" : "None"
+        },
+        {
+          "enumerant" : "ShaderRecordBufferNV",
           "value" : 5343,
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
@@ -10275,13 +10275,6 @@
           "version" : "None"
         },
         {
-          "enumerant" : "LaunchIdNV",
-          "value" : 5319,
-          "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
-          "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
-          "version" : "None"
-        },
-        {
           "enumerant" : "LaunchIdKHR",
           "value" : 5319,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
@@ -10289,8 +10282,8 @@
           "version" : "None"
         },
         {
-          "enumerant" : "LaunchSizeNV",
-          "value" : 5320,
+          "enumerant" : "LaunchIdNV",
+          "value" : 5319,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "version" : "None"
@@ -10303,8 +10296,8 @@
           "version" : "None"
         },
         {
-          "enumerant" : "WorldRayOriginNV",
-          "value" : 5321,
+          "enumerant" : "LaunchSizeNV",
+          "value" : 5320,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "version" : "None"
@@ -10317,8 +10310,8 @@
           "version" : "None"
         },
         {
-          "enumerant" : "WorldRayDirectionNV",
-          "value" : 5322,
+          "enumerant" : "WorldRayOriginNV",
+          "value" : 5321,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "version" : "None"
@@ -10331,8 +10324,8 @@
           "version" : "None"
         },
         {
-          "enumerant" : "ObjectRayOriginNV",
-          "value" : 5323,
+          "enumerant" : "WorldRayDirectionNV",
+          "value" : 5322,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "version" : "None"
@@ -10345,8 +10338,8 @@
           "version" : "None"
         },
         {
-          "enumerant" : "ObjectRayDirectionNV",
-          "value" : 5324,
+          "enumerant" : "ObjectRayOriginNV",
+          "value" : 5323,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "version" : "None"
@@ -10359,8 +10352,8 @@
           "version" : "None"
         },
         {
-          "enumerant" : "RayTminNV",
-          "value" : 5325,
+          "enumerant" : "ObjectRayDirectionNV",
+          "value" : 5324,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "version" : "None"
@@ -10373,8 +10366,8 @@
           "version" : "None"
         },
         {
-          "enumerant" : "RayTmaxNV",
-          "value" : 5326,
+          "enumerant" : "RayTminNV",
+          "value" : 5325,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "version" : "None"
@@ -10387,8 +10380,8 @@
           "version" : "None"
         },
         {
-          "enumerant" : "InstanceCustomIndexNV",
-          "value" : 5327,
+          "enumerant" : "RayTmaxNV",
+          "value" : 5326,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "version" : "None"
@@ -10401,8 +10394,8 @@
           "version" : "None"
         },
         {
-          "enumerant" : "ObjectToWorldNV",
-          "value" : 5330,
+          "enumerant" : "InstanceCustomIndexNV",
+          "value" : 5327,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "version" : "None"
@@ -10415,14 +10408,21 @@
           "version" : "None"
         },
         {
-          "enumerant" : "WorldToObjectNV",
-          "value" : 5331,
+          "enumerant" : "ObjectToWorldNV",
+          "value" : 5330,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "version" : "None"
         },
         {
           "enumerant" : "WorldToObjectKHR",
+          "value" : 5331,
+          "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
+          "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
+          "version" : "None"
+        },
+        {
+          "enumerant" : "WorldToObjectNV",
           "value" : 5331,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
@@ -10436,13 +10436,6 @@
           "version" : "None"
         },
         {
-          "enumerant" : "HitKindNV",
-          "value" : 5333,
-          "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
-          "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
-          "version" : "None"
-        },
-        {
           "enumerant" : "HitKindKHR",
           "value" : 5333,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
@@ -10450,14 +10443,21 @@
           "version" : "None"
         },
         {
-          "enumerant" : "IncomingRayFlagsNV",
-          "value" : 5351,
+          "enumerant" : "HitKindNV",
+          "value" : 5333,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
           "version" : "None"
         },
         {
           "enumerant" : "IncomingRayFlagsKHR",
+          "value" : 5351,
+          "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
+          "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
+          "version" : "None"
+        },
+        {
+          "enumerant" : "IncomingRayFlagsNV",
           "value" : 5351,
           "capabilities" : [ "RayTracingNV" , "RayTracingKHR" ],
           "extensions" : [ "SPV_NV_ray_tracing" , "SPV_KHR_ray_tracing" ],
